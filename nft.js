@@ -19,8 +19,8 @@ const web3 = new Web3(process.env.RPC_URL);
 const account = web3.eth.accounts.privateKeyToAccount(process.env.PRIVATE_KEY);
 web3.eth.accounts.wallet.add(account);
 
-const contractAddress = '0x3254FED2575630a9985f6a5f201129D9ec92dbc1'; // NFT Contract Address
-const dataHex = '0x1249c58b'; // Mint HEX Value
+const contractAddress = '0xF39c410Dac956BA98004f411E182FB4EEd595270'; // NFT Contract Address
+const dataHex = '0xefef39a10000000000000000000000000000000000000000000000000000000000000002'; // Mint HEX Value
 const value = web3.utils.toWei('0.1', 'ether'); // NFT Mint Price
 
 (async () => {
